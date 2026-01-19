@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>🏀Basketball Scoreboard</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+
+  <h1>BASKETBALL SCOREBOARD</h1>
+
+  <div class="top-panel">
+    <div class="panel">
+      <p>PERIOD</p>
+      <span id="period">1</span>
+      <button onclick="nextPeriod()">Next</button>
+    </div>
+
+    <div class="panel">
+      <p>TIME</p>
+      <span id="timer">12:00</span>
+      <div class="timer-buttons">
+        <button onclick="startTimer()">Start</button>
+        <button onclick="pauseTimer()">Pause</button>
+        <button onclick="resetTimer()">Reset</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="scoreboard">
+
+    <!-- HOME -->
+    <div class="team" id="home">
+      <h2>HOME</h2>
+      <div class="score" id="home-score">0</div>
+
+      <div class="buttons">
+        <button onclick="addScore('home',1)">+1</button>
+        <button onclick="addScore('home',2)">+2</button>
+        <button onclick="addScore('home',3)">+3</button>
+      </div>
+
+      <p>Fouls: <span id="home-fouls">0</span></p>
+      <button onclick="addFoul('home')">Add Foul</button>
+    </div>
+
+    <!-- GUEST -->
+    <div class="team" id="guest">
+      <h2>GUEST</h2>
+      <div class="score" id="guest-score">0</div>
+
+      <div class="buttons">
+        <button onclick="addScore('guest',1)">+1</button>
+        <button onclick="addScore('guest',2)">+2</button>
+        <button onclick="addScore('guest',3)">+3</button>
+      </div>
+
+      <p>Fouls: <span id="guest-fouls">0</span></p>
+      <button onclick="addFoul('guest')">Add Foul</button>
+    </div>
+
+  </div>
+
+  <button class="new-game" onclick="newGame()">NEW GAME</button>
+
+  <script src="index.js"></script>
+</body>
+</html>

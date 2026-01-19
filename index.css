@@ -1,0 +1,76 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #161E54;
+  color: white;
+  text-align: center;
+}
+
+h1 {
+  margin: 20px 0;
+}
+
+.scoreboard {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 30px 0;
+}
+
+.team {
+  background: #222;
+  padding: 20px;
+  width: 260px;
+  border-radius: 10px;
+}
+
+.team.leader {
+  border: 3px solid #00ff99;
+}
+
+.score {
+  font-size: 70px;
+  margin: 10px 0;
+  background: black;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.buttons button {
+  margin: 5px;
+  padding: 10px 15px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+button {
+  background: #ff5722;
+  border: none;
+  color: white;
+  border-radius: 5px;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+.top-panel {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.panel {
+  background: #222;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.timer-buttons button {
+  margin: 5px;
+}
+
+.new-game {
+  margin-top: 20px;
+  padding: 15px 25px;
+  font-size: 18px;
+}
